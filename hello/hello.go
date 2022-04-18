@@ -15,16 +15,16 @@ func main() {
 	log.SetFlags(0)
 
 	// Request a correct greeting message
-	message := greetings.Hello("Gabriel")
-	fmt.Println(message)
+	goodMessage, err := greetings.Hello("Gabriel")
+	fmt.Println(goodMessage)
 
 	// Request an incorrect greeting message
-	message, err := greetings.Hello("")
+	badMessage, err := greetings.Hello("")
 	// If an error was returned, print it to the console and
 	// exit the program.
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(message)
+	fmt.Println(badMessage)
 
 }
