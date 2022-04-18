@@ -14,7 +14,7 @@ func init() {
 
 // randomFormat returns one of a set of greeting messages. The returned
 // message is selected at random.
-func randomFormats() string {
+func randomFormat() string {
 	formats := []string{
 		"Hi, %v. Welcome!",
 		"Great to see you, %v!",
