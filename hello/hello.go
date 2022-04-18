@@ -28,7 +28,7 @@ func main() {
 	fmt.Println(badMessage)
 
 	// Request a Hello with randomFormat
-	randomMessage, err := greetings.HelloRandom("Gabriel")
+	randomMessage, err := greetings
 	fmt.Println(randomMessage)
 
 }
