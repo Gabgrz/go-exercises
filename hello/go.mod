@@ -1,3 +1,3 @@
-module github.com/gabgrz/golang/hello
+module github.com/Gabgrz/golang/hello
 
 go 1.17
