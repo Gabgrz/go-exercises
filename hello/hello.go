@@ -18,6 +18,10 @@ func main() {
 	goodMessage, err := greetings.Hello("Gabriel")
 	fmt.Println(goodMessage)
 
+	// Request a Hello with randomFormat
+	randomMessage, err := greetings.HelloRandom("Alejandro")
+	fmt.Println(randomMessage)
+
 	// Request an incorrect greeting message
 	badMessage, err := greetings.Hello("")
 	// If an error was returned, print it to the console and
@@ -26,9 +30,5 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(badMessage)
-
-	// Request a Hello with randomFormat
-	randomMessage, err := greetings
-	fmt.Println(randomMessage)
 
 }
